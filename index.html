@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <title>Vanguard Card Viewer</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logoHeader"
+        src="https://en.cf-vanguard.com/wp/wp-content/uploads/VG_G_logo_600px.png"
+      />
+    </header>
+    <div id="general-div" class="row">
+      <h2>Busca Avançada</h2>
+      <div class="column1">
+        <input
+          type="text"
+          id="cardType"
+          placeholder="Digite o parametro de busca."
+        />
+      </div>
+      <div class="column2">
+        <select id="selector" class="selectType">
+          <option value="id">Id</option>
+          <option value="name">Name</option>
+          <option value="clan">Clan</option>
+          <option value="grade">Grade</option>
+        </select>
+      </div>
+      <button class="form-type-button" onclick="searchSubmit()">Buscar</button>
+    </div>
+    <div id="div-cards"></div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
